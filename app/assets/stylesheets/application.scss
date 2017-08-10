@@ -5,6 +5,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-default .navbar-toggle {
+  border: 1px solid white;
+
+  .icon-bar {
+    background-color: white;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: white;
+
+    .icon-bar {
+      background-color: #1de9b6;
+    }
+  }
+}
+
 .navbar {
   background-color: transparent;
   color: white;
@@ -12,6 +29,13 @@
 }
 
 .nav.navbar-nav {
+  width: 100%;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: inherit;
+  }
+
   li a {
     color: white;
     text-decoration: none;
