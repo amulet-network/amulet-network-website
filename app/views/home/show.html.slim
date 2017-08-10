@@ -2,7 +2,17 @@
   .row
     .col-xs-12
       .row
-        .col-xs-12#social-links
+        .col-xs-12.hidden-xs#social-links
+          .social-link.pull-right
+            = link_to 'http://slack.amulettoken.io'
+              = image_tag 'slack.png'
+          .social-link.pull-right
+            = link_to 'https://twitter.com/amulettoken'
+              = image_tag 'twitter.png'
+          .social-link.pull-right
+            = link_to 'https://facebook.com/amulettoken'
+              = image_tag 'facebook.png'
+
         .col-xs-12
           .row
             .hero.col-xs-12
