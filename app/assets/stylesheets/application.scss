@@ -5,6 +5,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+
+#problem {
+  margin-top: 40px;
+
+  .header {
+    font-weight: 200;
+    margin-top: 20px;
+    font-size: 30px;
+  }
+
+  .subheader {
+    padding-left: 20px;
+    padding-right: 10px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+    }
+
+    font-weight: 200;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #00bfa5;
+  }
+
+  img {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
+
 .social-link {
   padding: 5px;
 }
@@ -55,6 +87,11 @@
 
 .flex {
   display: flex;
+}
+
+.stretch-center {
+  align-items: stretch;
+  align-self: center;
 }
 
 #hero-image img {
