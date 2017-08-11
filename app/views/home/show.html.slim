@@ -4,13 +4,13 @@
       .row
         .col-xs-12.hidden-xs#social-links
           .social-link.pull-right
-            = link_to 'http://slack.amulettoken.io'
+            = link_to ENV['SLACK_URL']
               = image_tag 'slack.png'
           .social-link.pull-right
-            = link_to 'https://twitter.com/amulettoken'
+            = link_to ENV['TWITTER_URL']
               = image_tag 'twitter.png'
           .social-link.pull-right
-            = link_to 'https://facebook.com/amulettoken'
+            = link_to ENV['FACEBOOK_URL']
               = image_tag 'facebook.png'
 
         .col-xs-12
