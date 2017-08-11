@@ -1,0 +1,54 @@
+.container
+  .row
+    .col-xs-12
+      .row
+        .col-xs-12.hidden-xs#social-links
+          .social-link.pull-right
+            = link_to ENV['SLACK_URL']
+              = image_tag 'slack.png'
+          .social-link.pull-right
+            = link_to ENV['TWITTER_URL']
+              = image_tag 'twitter.png'
+          .social-link.pull-right
+            = link_to ENV['FACEBOOK_URL']
+              = image_tag 'facebook.png'
+
+        .col-xs-12
+          .row
+            .hero.col-xs-12
+              .navbar.navbar-default
+                .navbar-header
+                  button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+
+                  a.navbar-brand href='#'
+                    = image_tag 'amulet-logo.png'
+
+                .collapse.navbar-collapse#navbar-collapse
+                  ul.nav.navbar-nav.pull-right
+                    li
+                      a href='#features' Features
+                    li
+                      a href='#benefits' Benefits
+                    li
+                      a href='#blog' Blog
+                    li
+                      a href='#contact' Contact
+                    li
+                      a href='#github' Github
+
+              .col-xs-12.flex
+                .hero-block
+                  .col-xs-12.col-sm-6#hero-cta
+                    .header
+                      | Decentralized Identity Services
+                    .subheader
+                      | Amulet is a decentralized ecosystem that lets you control your identity to drive technological advances among business, end users, developers and social enterprises/NGOs.
+                  .col-xs-12.col-sm-6#hero-image
+                    = image_tag 'iphone-header.png'
+
+          .col-xs-12#header
+          .col-xs-12
