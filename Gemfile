@@ -12,10 +12,14 @@ gem "puma"
 gem "rails", "~> 4.2.6"
 gem "bootstrap-sass"
 gem "slim-rails"
+gem 'coffee-rails'
 gem "sass-rails", "~> 5.0"
 gem "sprockets", ">= 3.0.0"
 gem "sprockets-es6"
 gem "uglifier"
+
+gem 'animate-rails'
+gem 'waypoints-rails'
 
 gem "rack-attack"
 

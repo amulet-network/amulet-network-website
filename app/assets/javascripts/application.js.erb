@@ -1,5 +1,6 @@
 //= require jquery
 //= require bootstrap-sprockets
+//= require waypoints
 
 $(document).ready(function() {
   var popoverTemplate = '<div class="popover">' +
@@ -42,5 +43,18 @@ $(document).ready(function() {
       placement: content[key].placement,
       html: true
     })
-  })
+  });
+
+  $('.animated').css('opacity', 0);
+
+  $('.animated').waypoint(function() {
+    if ($(this).data('direction') === 'right') {
+      $(this).addClass('fadeInRight');
+    }
+    else {
+      $(this).addClass('fadeInLeft');
+    }
+  }, {
+    offset: '90%'
+  });
 });
