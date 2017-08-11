@@ -1,6 +1,6 @@
-.container
+.container.header-container
   .row
-    .col-xs-12
+    .col-xs-12.col-md-10.col-md-offset-1
       .row
         .col-xs-12.hidden-xs#social-links
           .social-link.pull-right
@@ -63,5 +63,20 @@
                     .vc-image
                       = image_tag 'problem-diagram.png'
 
-          .col-xs-12#header
-          .col-xs-12
+.container.bg-grey.full-width
+  .row
+    .container
+      .row
+        .col-xs-12.col-md-10.col-md-offset-1
+          .row#solution
+            .header-container
+              .header
+                | The Solution
+
+              .subheader.hidden-xs
+                | Amulet - A Decentralized ecosystem that lets you
+                br
+                | control your identity securely and easily
+
+              .subheader.visible-xs
+                | Amulet - A Decentralized ecosystem that lets you control your identity securely and easily

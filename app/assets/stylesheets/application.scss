@@ -5,7 +5,51 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  font-weight: 200;
+}
 
+.full-width {
+  margin: 0;
+  width: 100%;
+  box-shadow: 0 0 2.5px 0 #d8e0e3 inset;
+}
+
+.bg-grey {
+  background-color: #f5f7f8;
+}
+
+#solution {
+  margin-top: 60px;
+  margin-bottom: 60px;
+
+  .header-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  .header {
+    padding-left: 0;
+    font-size: 30px;
+  }
+
+  .subheader {
+    padding-left: 20px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 0;
+    }
+
+    padding-top: 10px;
+    font-size: 20px;
+    color: #00bfa5;
+  }
+}
 
 #problem {
   margin-top: 40px;
@@ -96,9 +140,10 @@
 
 #hero-image img {
   display: none;
+  padding-top: 40px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 100px;
+    padding-top: 80px;
     display: inherit;
     padding-left: 75px;
     width: 100%;
@@ -116,7 +161,7 @@
 
 #hero-cta {
   .header {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 60px;
     font-size: 40px;
     color: white;
@@ -132,15 +177,25 @@
   padding-bottom: 40px;
 }
 
+.header-container {
+  margin-bottom: 60px;
+}
+
 .hero-block {
   position: relative;
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 100px;
 }
 
 .hero {
   height: 100%;
-  border-radius: 5px;
+
+  border-radius: 0;
+
+  @media screen and (min-width: 768px) {
+    border-radius: 5px;
+  }
+
   background-image: linear-gradient(235deg, #1de9b6, #00bfa5);
   box-shadow: 0 0 2.5px 0 #d8e0e3;
 }
