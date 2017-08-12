@@ -33,7 +33,8 @@ body {
   background-color: #f5f7f8;
 }
 
-#solution {
+#solution,
+#time-line {
   display: inline;
 
   margin-top: 10px;
@@ -67,7 +68,7 @@ body {
     padding-right: 15px;
 
     @media screen and (min-width: 768px) {
-      padding-left: 0;
+      padding-left: 15px;
     }
 
     padding-top: 10px;
@@ -111,6 +112,52 @@ body {
       font-size: 15px;
       color: #72909d;
     }
+
+    .date {
+      padding-top: 10px;
+      padding-left: 0;
+
+      @media screen and (min-width: 768px) {
+        padding-left: inherit;
+      }
+
+      font-size: 15px;
+      color: #00bfa5;
+    }
+  }
+
+  .timeline {
+    @media screen and (min-width: 768px) {
+      height: inherit;
+    }
+  }
+
+  .timeline-icon img {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-line {
+    margin-top: 40px;
+    height: 140px;
+    background: linear-gradient(to right,
+	                              transparent 0%,
+	                              transparent calc(50% - 0.81px),
+	                              #d8e0e3 calc(50% - 0.8px),
+	                              #d8e0e3 calc(50% + 0.8px),
+	                              transparent calc(50% + 0.81px),
+	                              transparent 100%);
+  }
+}
+
+.info-box.timeline {
+  height: inherit;
+
+  @media screen and (min-width: 768px) {
+    height: 190px !important;
   }
 }
 
