@@ -6,6 +6,9 @@
 @import "bootstrap";
 @import "animate";
 
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 #problem-area {
   display: inline;
 
@@ -29,8 +32,88 @@ body {
   box-shadow: 0 0 2.5px 0 #d8e0e3 inset;
 }
 
+.round-background {
+  height: 30px;
+  width: 30px;
+  color: #1de9b6;
+  background-color: white;
+  border-radius: 50%;
+
+  display: inline-block;
+
+  .fa {
+    position: relative;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -70%);
+  }
+}
+
 .bg-grey {
   background-color: #f5f7f8;
+}
+
+.bg-green {
+  background-image: linear-gradient(235deg, #1de9b6, #00bfa5);
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.footer {
+  padding: 40px 0;
+  color: white;
+}
+
+.footer-column {
+  display: inline;
+  text-align: center;
+  padding-left: 15px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: inherit;
+    text-align: inherit;
+    margin-bottom: 0;
+  }
+
+  .header {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    font-size: 20px;
+  }
+
+  .social-link {
+    padding-left: 0;
+    padding-right: 0;
+
+    a {
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    .link-text {
+      text-align: right;
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+      }
+      padding-top: 4px;
+      font-size: 16px;
+      display: inline-block;
+      color: white;
+      padding-left: 10px;
+    }
+  }
 }
 
 #solution,

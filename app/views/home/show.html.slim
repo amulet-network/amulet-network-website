@@ -168,7 +168,7 @@
                         | A message about security
 
                       .col-xs-12.col-sm-4
-                        = image_tag 'verification.png', id: 'amulet'
+                        = image_tag 'logo-white.png', id: 'amulet'
 
                       .col-xs-12.text-center.visible-xs.mobile-explanation
                         | A message about amulet
@@ -257,3 +257,108 @@
                     .row
                       .subheader
                         | Building Amulet on the Ethereum blockchain allows the data to be decentralized and controlled by the end user who owns the data.
+
+.container.bg-green.full-width.no-shadow.footer
+  .container
+    .row
+      .col-xs-12.col-md-10.col-md-offset-1
+        .row
+          .col-xs-12.col-sm-6.footer-column.hidden-xs
+            .row
+              = image_tag 'logo-white.png'
+          .col-xs-12.col-sm-3.footer-column
+            .row
+              .col-xs-6.col-xs-offset-3.col-sm-12.col-sm-offset-0.text-left
+                .row
+                  .header
+                    | Social
+              .col-xs-12.text-left
+                .row
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['SLACK_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Slack
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'slack'
+                        .col-xs-10.link-text.hidden-xs
+                          | Slack
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['TWITTER_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Twitter
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'twitter'
+                        .col-xs-10.link-text.hidden-xs
+                          | Twitter
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['FACEBOOK_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Facebook
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'facebook'
+                        .col-xs-10.link-text.hidden-xs
+                          | Facebook
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['GITHUB_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Github
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'github'
+                        .col-xs-10.link-text.hidden-xs
+                          | Github
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['YOUTUBE_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Youtube
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'youtube-play'
+                        .col-xs-10.link-text.hidden-xs
+                          | Youtube
+
+          .col-xs-12.col-sm-3.footer-column
+            .row
+              .col-xs-4.col-xs-offset-4.col-sm-12.col-sm-offset-0.text-left
+                .row
+                  .header
+                    | More
+              .col-xs-12.text-left
+                .row
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['BLOG_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Blog
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'bookmark'
+                        .col-xs-10.link-text.hidden-xs
+                          | Blog
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['DOCUMENTATION_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Documentation
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'file-text-o'
+                        .col-xs-10.link-text.hidden-xs
+                          | Documentation
+
+          .col-xs-12.col-sm-6.footer-column.visible-xs
+            .row
+              = image_tag 'logo-white.png'

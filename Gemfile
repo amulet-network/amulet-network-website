@@ -21,6 +21,8 @@ gem "uglifier"
 gem 'animate-rails'
 gem 'waypoints-rails'
 
+gem 'font-awesome-sass'
+
 gem "rack-attack"
 
 group :development do
