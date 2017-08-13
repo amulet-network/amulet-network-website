@@ -333,21 +333,29 @@ body {
     display: inline-block;
     width: 100%;
 
-
+    .mobile-explanation {
+      margin-bottom: 20px;
+      height: 15px;
+      color: white;
+    }
 
     img {
       margin-bottom: 10px;
-
-      @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-      }
-
-      height: 60px;
-      width: 60px;
+      height: 40px;
+      width: 40px;
       position: relative;
 
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
+
+      @media screen and (min-width: 768px) {
+        margin-bottom: 0;
+
+        height: 60px;
+        width: 60px;
+
+        transform: translate(-50%, -50%);
+      }
     }
   }
 
@@ -373,6 +381,7 @@ body {
 }
 
 .popover {
+  display: none !important;
   padding: 15px;
   color: #72909d;
   box-shadow: 0 0 2.5px 0 #d8e0e3;
@@ -380,6 +389,7 @@ body {
   width: 100vw;
 
   @media screen and (min-width: 768px) {
+    display: inherit !important;
     min-width: 300px;
   }
 
