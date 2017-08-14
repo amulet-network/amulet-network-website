@@ -1,6 +1,6 @@
-.container
+.container.header-container
   .row
-    .col-xs-12
+    .col-xs-12.col-md-10.col-md-offset-1
       .row
         .col-xs-12.hidden-xs#social-links
           .social-link.pull-right
@@ -50,5 +50,315 @@
                   .col-xs-12.col-sm-6#hero-image
                     = image_tag 'iphone-header.png'
 
-          .col-xs-12#header
-          .col-xs-12
+            .col-xs-12#problem
+              .row#problem-area
+                .col-xs-12.col-sm-6.stretch-center
+                  .row
+                    .header
+                      | The Problem
+                    .subheader
+                      | A great number of organizations request, access and store our identity data. This fragmentation leads us to losing time duplicating and transferring the data. With increasing frequency, the way data is stored leads to security breaches.
+                .col-xs-6.stretch-center.hidden-xs
+                  .row
+                    .vc-image
+                      = image_tag 'problem-diagram.png'
+
+.container.bg-grey.full-width
+  .row
+    .container
+      .row
+        .col-xs-12.col-md-10.col-md-offset-1
+          .row#solution
+            .row
+              .header-container
+                .header.col-xs-12
+                  | The Solution
+
+                .subheader.hidden-xs
+                  | Amulet - A Decentralized ecosystem that lets you
+                  br
+                  | control your identity securely and easily
+
+                .subheader.visible-xs
+                  | Amulet - A Decentralized ecosystem that lets you control your identity securely and easily
+
+              .col-xs-12.col-sm-4
+                .info-box
+                  .col-xs-12
+                    .row
+                      = image_tag 'decentralisation.png'
+                  .col-xs-12
+                    .row
+                      .header
+                        | Decentralization
+
+                  .col-xs-12
+                    .row
+                      .subheader
+                        | Building Amulet on the Ethereum blockchain allows the data to be decentralized and controlled by the end user who owns the data.
+
+              .col-xs-12.col-sm-4
+                .info-box
+                  .col-xs-12
+                    .row
+                      = image_tag 'identity.png'
+                  .col-xs-12
+                    .row
+                      .header
+                        | Identity Management
+
+                  .col-xs-12
+                    .row
+                      .subheader
+                        | The end user will be able to choose what data is stored and who they permit to access it. This will greatly simplify dissemination of relevant documentation between organizations and securely expedite the user experience.
+
+              .col-xs-12.col-sm-4
+                .info-box
+                  .col-xs-12
+                    .row
+                      = image_tag 'platform.png'
+                  .col-xs-12
+                    .row
+                      .header
+                        | Platform
+
+                  .col-xs-12
+                    .row
+                      .subheader
+                        | Amulet will be open and support other Apps with the intrastructure to expand its identity related functions. This will allow Amulet to gradually become a universal identity management platform.
+
+
+  .row
+    .container
+      .row
+        .col-xs-12.col-md-10.col-md-offset-1
+          .row#use-cases
+            .col-xs-12
+              .row
+                .col-xs-12
+                  .row
+                    .header
+                      | Amulet Use Cases
+
+                .col-xs-12
+                  .row
+                    .subheader
+                      | Lorem ipsum dolor
+
+                .col-xs-12
+                  .row
+                    .icon-top-row
+                      .col-xs-12.col-sm-6.animated data-direction='left'
+                        = image_tag 'verification.png', id: 'verification'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about verification
+
+                      .col-xs-12.col-sm-6.animated data-direction='right'
+                        = image_tag 'medical.png', id: 'medical'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about medical
+
+                    .icon-middle-row
+                      .col-xs-12.col-sm-4.animated data-direction='left'
+                        = image_tag 'security.png', id: 'security'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about security
+
+                      .col-xs-12.col-sm-4
+                        = image_tag 'logo-white.png', id: 'amulet'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about amulet
+
+                      .col-xs-12.col-sm-4.animated data-direction='right'
+                        = image_tag 'unidentified.png', id: 'unidentified'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about unidentified
+
+                    .icon-bottom-row
+                      .col-xs-12.col-sm-6.animated data-direction='left'
+                        = image_tag 'entertainment.png', id: 'entertainment'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about entertainment
+
+                      .col-xs-12.col-sm-6.animated data-direction='right'
+                        = image_tag 'travel.png', id: 'travel'
+
+                      .col-xs-12.text-center.visible-xs.mobile-explanation
+                        | A message about travel
+
+  .row
+    .container
+      .row
+        .col-xs-12.col-md-10.col-md-offset-1
+          .row#time-line
+            .row
+              .header-container
+                .header.col-xs-12
+                  | The Timeline
+
+                .subheader
+                  | Lorem ipsum dolor
+
+            .row
+              .col-xs-12.col-sm-5
+                .info-box.timeline
+                  .col-xs-12.visible-xs
+                    .row
+                      = image_tag 'platform.png'
+                  .col-xs-12
+                    .row
+                      .header
+                        | Decentralization
+
+                  .col-xs-12
+                    .row
+                      .date
+                        | DD-MM-YYYY
+
+                  .col-xs-12
+                    .row
+                      .subheader
+                        | Building Amulet on the Ethereum blockchain allows the data to be decentralized and controlled by the end user who owns the data.
+
+              .col-xs-2.hidden-xs
+                .col-xs-12
+                  .row.timeline-icon
+                    = image_tag 'platform.png'
+                .timeline-line
+
+            .row
+              .col-xs-2.col-xs-offset-5.hidden-xs
+                .col-xs-12
+                  .row.timeline-icon
+                    = image_tag 'decentralisation.png'
+                .timeline-line
+              .col-xs-12.col-sm-5
+                .info-box.timeline
+                  .col-xs-12.visible-xs
+                    .row
+                      = image_tag 'decentralisation.png'
+                  .col-xs-12
+                    .row
+                      .header
+                        | Decentralization
+
+                  .col-xs-12
+                    .row
+                      .date
+                        | DD-MM-YYYY
+
+                  .col-xs-12
+                    .row
+                      .subheader
+                        | Building Amulet on the Ethereum blockchain allows the data to be decentralized and controlled by the end user who owns the data.
+
+.container.bg-green.full-width.no-shadow.footer
+  .container
+    .row
+      .col-xs-12.col-md-10.col-md-offset-1
+        .row
+          .col-xs-12.col-sm-6.footer-column.hidden-xs
+            .row
+              = image_tag 'logo-white.png'
+          .col-xs-12.col-sm-3.footer-column
+            .row
+              .col-xs-6.col-xs-offset-3.col-sm-12.col-sm-offset-0.text-left
+                .row
+                  .header
+                    | Social
+              .col-xs-12.text-left
+                .row
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['SLACK_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Slack
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'slack'
+                        .col-xs-10.link-text.hidden-xs
+                          | Slack
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['TWITTER_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Twitter
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'twitter'
+                        .col-xs-10.link-text.hidden-xs
+                          | Twitter
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['FACEBOOK_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Facebook
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'facebook'
+                        .col-xs-10.link-text.hidden-xs
+                          | Facebook
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['GITHUB_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Github
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'github'
+                        .col-xs-10.link-text.hidden-xs
+                          | Github
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['YOUTUBE_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Youtube
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'youtube-play'
+                        .col-xs-10.link-text.hidden-xs
+                          | Youtube
+
+          .col-xs-12.col-sm-3.footer-column
+            .row
+              .col-xs-4.col-xs-offset-4.col-sm-12.col-sm-offset-0.text-left
+                .row
+                  .header
+                    | More
+              .col-xs-12.text-left
+                .row
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['BLOG_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Blog
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'bookmark'
+                        .col-xs-10.link-text.hidden-xs
+                          | Blog
+
+                  .social-link.col-xs-12
+                    .row
+                      = link_to ENV['DOCUMENTATION_URL']
+                        .col-xs-6.link-text.visible-xs
+                          | Documentation
+                        .col-xs-6.col-sm-2
+                          .round-background
+                            = icon 'file-text-o'
+                        .col-xs-10.link-text.hidden-xs
+                          | Documentation
+
+          .col-xs-12.col-sm-6.footer-column.visible-xs
+            .row
+              = image_tag 'logo-white.png'

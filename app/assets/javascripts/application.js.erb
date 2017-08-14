@@ -1,0 +1,54 @@
+//= require jquery
+//= require bootstrap-sprockets
+//= require waypoints
+
+$(document).ready(function() {
+  var popoverTemplate = '<div class="popover">' +
+                          '<div class="popover-content">' +
+                          '</div>' +
+                        '</div>';
+
+	var content = {
+    medical: {
+      message: '<div class="col-xs-12"><%= image_tag "medical.png" %></div><div class="col-xs-12"><div class="header">Medical</div></div><div class="col-xs-12"><div class="subheader">A message about medical</div></div>'
+    },
+    security: {
+      message: '<div class="col-xs-12"><%= image_tag "security.png" %></div><div class="col-xs-12"><div class="header">Security</div></div><div class="col-xs-12"><div class="subheader">A message about security</div></div>'
+    },
+    travel: {
+      message: '<div class="col-xs-12"><%= image_tag "travel.png" %></div><div class="col-xs-12"><div class="header">Travel</div></div><div class="col-xs-12"><div class="subheader">A message about travel</div></div>'
+    },
+    entertainment: {
+      message: '<div class="col-xs-12"><%= image_tag "entertainment.png" %></div><div class="col-xs-12"><div class="header">Entertainment</div></div><div class="col-xs-12"><div class="subheader">A message about entertainment</div></div>'
+    },
+    unidentified: {
+      message: '<div class="col-xs-12"><%= image_tag "unidentified.png" %></div><div class="col-xs-12"><div class="header">Unidentified</div></div><div class="col-xs-12"><div class="subheader">A message about unidentified</div></div>'
+    },
+    verification: {
+      message: '<div class="col-xs-12"><%= image_tag "verification.png" %></div><div class="col-xs-12"><div class="header">Verification</div></div><div class="col-xs-12"><div class="subheader">A message about verification</div></div>'
+    }
+  }
+
+  Object.keys(content).forEach(function(key, index) {
+    $('#' + key).popover({
+      trigger: 'hover',
+      content: content[key].message,
+      placement: 'auto',
+      animation: true,
+      html: true
+    })
+  });
+
+  $('.animated').css('opacity', 0);
+
+  $('.animated').waypoint(function() {
+    if ($(this).data('direction') === 'right') {
+      $(this).addClass('fadeInRight');
+    }
+    else {
+      $(this).addClass('fadeInLeft');
+    }
+  }, {
+    offset: '90%'
+  });
+});
